@@ -43,8 +43,9 @@ function syncData(data) {
   document.querySelector(".hour-sunset").innerHTML = sunset;
   document.querySelector(
     ".image-time"
-  ).innerHTML = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+  ).src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
 
+  console.log(data);
 }
 
 async function searchCity(city) {
