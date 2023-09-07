@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Simple Weather App | O Seu Aplicativo de Metereologia</title>
+</head>
+
+<body>
+    <header>
+        <input type="text" name="location" id="location" class="location-input"
+            placeholder="Procure por sua cidade de preferência">
+        <button class="search-button" onclick="search()"> <img src="./img/search.png" alt="search" class="search-icon">
+        </button>
+    </header>
+    <main class="main">
+        <section class="container-info">
+            <h1 class="city"></h1>
+            <p class="day"></p>
+        </section>
+        <section class="weather-forecast-box">
+            <div class="a">
+                <div>
+                    <p class="temperature">23°C</p>
+                    <div class="temperature-and-info-day">
+                        <div class="box-sunrise-and-sunset">
+                            <img src="./img/sunrise-white.png" alt="nascer do sol">
+                            <span class="box-info-day">
+                                <h3 class="sunrise"> Nascer </h3>
+                                <p class="hour-sunrise"> 06:37 </p>
+                            </span>
+                        </div>
+
+                        <div class="box-sunrise-and-sunset">
+                            <img src="./img/sunset-white.png" alt="por do sol">
+                            <span class="box-info-day">
+                                <h3 class="sunset"> Por </h3>
+                                <p class="hour-sunset"> 18:37 </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-time">
+                    <img src="https://openweathermap.org/img/wn/04n.png" class="image-time" alt="tempo">
+                    <h3 class="title-time"> Nublado </h3>
+                </div>
+            </div>
+
+
+            <div class="extra-details">
+
+                <span class="extra-details-info">
+                    <img src="./img/humidity.png" alt="umidade do ar">
+                    <p class="humidity"> 41% </p>
+                    <p> Umidade </p>
+                </span>
+                <span class="extra-details-info">
+                    <img src="./img/wind.png" alt="vento">
+                    <p class="wind"> 10km/h </p>
+                    <p> Velocidade do vento </p>
+                </span>
+
+
+
+                <span class="extra-details-info">
+                    <img src="./img/pressure-white.png" alt="pressão">
+                    <p class="pressure"> 1000BAR </p>
+                    <p> Pressão </p>
+                </span>
+                <span class="extra-details-info">
+                    <img src="./img/uv.png" alt="uv">
+                    <p class="visibility"> 10Km </p>
+                    <p> Visibilidade </p>
+                </span>
+
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
